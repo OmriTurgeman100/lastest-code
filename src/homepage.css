@@ -6,10 +6,7 @@
     --bg-primary: #23232e;
     --bg-secondary: #141418;
     --transition-speed: 600ms;
-
-
 }
-
 body {
     color: black;
     background-color: white;
@@ -170,6 +167,15 @@ body::-webkit-scrollbar-thumb {
 }
 
 main {
+    padding: 20px;
     margin-left: 5rem;
 }
 
+
+.main-on-hover {
+    transition: margin-left 600ms ease; /* Add transition for a smooth effect */
+}
+
+.navbar:hover + main {
+    margin-left: 16rem; /* Adjust this value based on your design */
+}
